@@ -8,8 +8,8 @@ import { SystemCanvas } from "@/components/viz/system-canvas"
 const storySections = [
   { id: "intro", label: "Intro" },
   { id: "mindset", label: "Mindset" },
-  { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
   { id: "skills", label: "Skills" },
   { id: "hobbies", label: "Hobbies" },
@@ -26,21 +26,22 @@ export default function HeroStory() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-950/45 via-slate-950/60 to-slate-950/75" />
 
       <section id="intro" className="relative z-10 min-h-screen border-b border-white/10">
-        <div className="mx-auto flex min-h-screen w-full max-w-[94rem] items-center px-6 pt-20 pb-24">
-          <div className="grid w-full gap-10 lg:-translate-y-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-stretch">
-            <div className="rounded-2xl border border-white/15 bg-slate-950/55 p-8 shadow-2xl backdrop-blur-md md:p-10 lg:flex lg:h-[600px] lg:flex-col lg:justify-between">
+        <div className="mx-auto flex min-h-screen w-full max-w-[96rem] items-center px-6 pt-20 pb-24">
+          <div className="grid w-full gap-10 lg:-translate-y-12 lg:grid-cols-[1.22fr_0.82fr] lg:items-stretch">
+            <div className="mb-10 rounded-2xl border border-white/15 bg-slate-950/55 p-8 shadow-2xl backdrop-blur-md md:mb-12 md:p-10 lg:mb-0 lg:flex lg:h-[620px] lg:flex-col lg:justify-between">
               <div>
                 <p className="mb-4 text-sm uppercase tracking-[0.22em] text-cyan-300/90">Tushar Kendre</p>
                 <h1 className="mb-5 text-4xl font-bold leading-tight text-slate-50 md:text-6xl">
-                  Backend Engineer focused on scalable systems, cloud architecture, and reliable product delivery.
+                  Senior Software Engineer building scalable backend systems, cloud-native platforms, and reliable
+                  product delivery.
                 </h1>
                 <p className="mb-4 text-lg leading-relaxed text-slate-200">
-                  I build and ship resilient APIs and distributed services, turning complex requirements into
-                  production-ready solutions that are maintainable, observable, and cost-aware.
+                  SDE II with 5+ years of experience designing multi-tenant systems, configurable rules engines, and
+                  ML-driven document processing pipelines on AWS.
                 </p>
                 <p className="text-slate-300">
-                  My work combines deep engineering with practical product thinking — from system design and data flows
-                  to deployment, performance, and long-term scale.
+                  I partner across engineering and product to ship maintainable APIs and distributed services with
+                  strong observability, predictable performance, and infrastructure automation.
                 </p>
               </div>
 
@@ -82,8 +83,8 @@ export default function HeroStory() {
               </div>
             </div>
 
-            <div className="mx-auto w-full overflow-hidden rounded-2xl border border-white/20 bg-slate-950/60 shadow-2xl backdrop-blur-md lg:h-[600px]">
-              <div className="relative h-[300px] sm:h-[360px] lg:h-full">
+            <div className="mx-auto w-full overflow-hidden rounded-2xl border border-white/20 bg-slate-950/60 shadow-2xl backdrop-blur-md lg:h-[620px]">
+              <div className="relative h-[320px] sm:h-[380px] lg:h-full">
                 <Image src="/hero-photo.jpg" alt="Portrait of Tushar Kendre" fill className="object-cover" priority />
               </div>
             </div>
@@ -117,6 +118,43 @@ export default function HeroStory() {
         </div>
       </section>
 
+      <section id="experience" className="relative z-10 border-b border-white/10">
+        <div className="mx-auto w-full max-w-[94rem] px-6 py-24 xl:px-8">
+          <h2 className="mb-10 text-3xl font-semibold text-slate-50 md:text-4xl">Experience Timeline</h2>
+          <div className="space-y-4 text-slate-200">
+            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
+              <p className="text-sm text-cyan-300/90">Jan 2025 – Present</p>
+              <p className="mt-1 text-lg font-medium text-slate-50">Software Development Engineer II · Patient First.AI</p>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-300">
+                <li>Architected and led a multi-tenant vaccination compliance platform serving 10+ universities and 50,000+ student records.</li>
+                <li>Designed a configurable rules engine supporting 100+ compliance policies with dynamic evaluation workflows.</li>
+                <li>Built scalable Fastify APIs, optimized PostgreSQL schemas, and implemented OCR + ML extraction with 95%+ structured accuracy.</li>
+                <li>Owned CI/CD and IaC with GitHub Actions and Terraform; deployed on AWS ECS/Lambda with 99.9%+ uptime.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
+              <p className="text-sm text-cyan-300/90">July 2024 – Dec 2024</p>
+              <p className="mt-1 text-lg font-medium text-slate-50">Desktop Support Assistant · Boston University</p>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-300">
+                <li>Designed and deployed a lab access control system with Golang, PHP, and MariaDB across 10+ engineering labs.</li>
+                <li>Integrated real-time authentication and hardware triggers to strengthen policy enforcement and reduce unauthorized access.</li>
+                <li>Owned end-to-end deployment and operational support for campus-wide lab access workflows.</li>
+              </ul>
+            </div>
+            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
+              <p className="text-sm text-cyan-300/90">Oct 2020 – Dec 2023</p>
+              <p className="mt-1 text-lg font-medium text-slate-50">Software Development Engineer · Brainwave Science Inc.</p>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-slate-300">
+                <li>Led development of distributed EEG-based ML systems using FastAPI, Airflow, Snowflake, and AWS SageMaker.</li>
+                <li>Optimized real-time inference pipelines, reducing latency by 70% and hardware footprint by 60%.</li>
+                <li>Designed containerized microservices with Docker, Kubernetes, and AWS EC2 for production delivery.</li>
+                <li>Managed and mentored a 10-engineer team shipping AI systems for NIA (India) and Dubai Police.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="projects" className="relative z-10 border-b border-white/10">
         <div className="mx-auto w-full max-w-[94rem] px-6 py-24 xl:px-8">
           <h2 className="mb-10 text-3xl font-semibold text-slate-50 md:text-4xl">Selected Builds</h2>
@@ -128,8 +166,8 @@ export default function HeroStory() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-slate-50">rcube-js</h3>
                 <p className="mt-2 text-slate-200">
-                  Interactive NxN Rubik&apos;s Cube simulator focused on smooth browser performance and robust cube state
-                  transitions.
+                  In-browser NxN Rubik&apos;s Cube simulator with scalable cube-state modeling and GPU-accelerated 3D
+                  transformations for smooth real-time interaction.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-200">
                   <span className="rounded-full border border-white/20 px-3 py-1">React</span>
@@ -152,8 +190,8 @@ export default function HeroStory() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-slate-50">Resume Analyzer</h3>
                 <p className="mt-2 text-slate-200">
-                  AI-powered resume review tool with entity extraction, topic modeling, and skill-gap insights for
-                  actionable feedback.
+                  NLP-driven resume analysis tool for entity extraction, topic modeling, and skill-gap visualization with
+                  actionable scoring and recommendations.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-200">
                   <span className="rounded-full border border-white/20 px-3 py-1">Fastify</span>
@@ -176,8 +214,8 @@ export default function HeroStory() {
             <article className="rounded-2xl border border-white/15 bg-slate-900/55 p-6">
               <h3 className="text-xl font-semibold text-slate-50">Online SSVEP-Based Robot Controller</h3>
               <p className="mt-2 text-slate-200">
-                Real-time brain-computer interface project using adaptive Riemannian geometry for autonomous robot
-                control.
+                Real-time SSVEP-based BCI system using adaptive Riemannian geometry for autonomous robot control,
+                validated on live EEG experiments.
               </p>
               <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-200">
                 <span className="rounded-full border border-white/20 px-3 py-1">BCI Meeting 2021</span>
@@ -194,29 +232,6 @@ export default function HeroStory() {
                 <ArrowRight className="h-4 w-4" />
               </a>
             </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" className="relative z-10 border-b border-white/10">
-        <div className="mx-auto w-full max-w-[94rem] px-6 py-24 xl:px-8">
-          <h2 className="mb-10 text-3xl font-semibold text-slate-50 md:text-4xl">Experience Timeline</h2>
-          <div className="space-y-4 text-slate-200">
-            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
-              <p className="text-sm text-cyan-300/90">Jan 2025 – Present</p>
-              <p className="mt-1 text-lg font-medium text-slate-50">Software Development Engineer II · Patient First.AI</p>
-              <p className="mt-2 text-slate-300">Led a multi-tenant compliance platform with high-volume ingestion and ML extraction.</p>
-            </div>
-            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
-              <p className="text-sm text-cyan-300/90">July 2024 – Dec 2024</p>
-              <p className="mt-1 text-lg font-medium text-slate-50">Desktop Support Assistant · Boston University</p>
-              <p className="mt-2 text-slate-300">Designed and deployed lab access control across 10+ engineering labs.</p>
-            </div>
-            <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6">
-              <p className="text-sm text-cyan-300/90">Oct 2020 – Dec 2023</p>
-              <p className="mt-1 text-lg font-medium text-slate-50">Software Development Engineer · Brainwave Science Inc.</p>
-              <p className="mt-2 text-slate-300">Built and scaled distributed EEG/ML systems for production deployments.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -256,11 +271,11 @@ export default function HeroStory() {
             </div>
             <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6 text-slate-200">
               <p className="mb-2 text-sm uppercase tracking-[0.16em] text-blue-300/90">Shipped with</p>
-              <p>AWS ECS/Lambda/EC2/SageMaker, PostgreSQL, Docker, Kubernetes, GitHub Actions, Terraform.</p>
+              <p>AWS ECS/Lambda/EC2/SageMaker, PostgreSQL, Docker, Kubernetes, GitHub Actions, Terraform, Airflow.</p>
             </div>
             <div className="rounded-xl border border-white/15 bg-slate-900/60 p-6 text-slate-200">
               <p className="mb-2 text-sm uppercase tracking-[0.16em] text-blue-300/90">Scaled with</p>
-              <p>Distributed systems, REST APIs, Airflow, Snowflake, NLP pipelines, observability-first design.</p>
+              <p>Distributed systems, REST APIs, Snowflake, NLP pipelines, PyTorch, TensorFlow, HuggingFace, observability-first design.</p>
             </div>
           </div>
         </div>
@@ -327,6 +342,7 @@ export default function HeroStory() {
                 Comparative Performance Analysis of Scalp EEG and Ear EEG based P300 Ambulatory Brain-Computer
                 Interfaces using Riemannian Geometry and Convolutional Neural Network.
               </p>
+              <p className="mt-3 text-sm text-slate-400">Vartika Gupta, Tushar P. Kendre, Tharun Kumar Reddy, Vipul Arora · July 2020</p>
               <a
                 href="https://doi.org/10.1109/NCC55593.2022.9806815"
                 target="_blank"
